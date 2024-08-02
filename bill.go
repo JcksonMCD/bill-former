@@ -40,3 +40,8 @@ func (b bill) format() string {
 func (b bill) updateTip(tip float64) {
 	b.tip = tip
 }
+
+// add an item to the bill
+func (b bill) addItem(item string, price float64) {
+
+}
