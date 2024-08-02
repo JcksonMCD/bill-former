@@ -35,3 +35,8 @@ func (b bill) format() string {
 
 	return fs
 }
+
+// update tip
+func (b bill) updateTip(tip float64) {
+
+}
