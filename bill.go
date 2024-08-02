@@ -45,6 +45,6 @@ func (b *bill) updateTip(tip float64) {
 }
 
 // add an item to the bill
-func (b bill) addItem(item string, price float64) {
+func (b *bill) addItem(item string, price float64) {
 	b.items[item] = price
 }
