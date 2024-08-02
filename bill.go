@@ -18,6 +18,6 @@ func newBill(name string) bill {
 }
 
 // format the bill
-func (bill) format() string {
+func (b bill) format() string {
 
 }
