@@ -40,11 +40,11 @@ func (b bill) format() string {
 }
 
 // update tip
-func (b bill) updateTip(tip float64) {
-	b.tip = tip
+func (b *bill) updateTip(tip float64) {
+	(*b).tip = tip
 }
 
 // add an item to the bill
-func (b bill) addItem(item string, price float64) {
-	b.items[item] = price
+func (b *bill) addItem(item string, price float64) {
+	(*b).items[item] = price
 }
