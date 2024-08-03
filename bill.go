@@ -48,3 +48,8 @@ func (b *bill) updateTip(tip float64) {
 func (b *bill) addItem(item string, price float64) {
 	b.items[item] = price
 }
+
+// save bill
+func (b *bill) saveBill() {
+
+}
