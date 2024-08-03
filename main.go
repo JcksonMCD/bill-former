@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-func getInput() (string, error) {
+func getInput(prompt string, b *bufio.Reader) (string, error) {
 
 }
 
