@@ -17,9 +17,7 @@ func getInput(prompt string, b *bufio.Reader) (string, error) {
 func createBill() bill {
 	reader := bufio.NewReader(os.Stdin)
 
-	fmt.Print("Create a new bill name: ")
-	name, _ := reader.ReadString('\n')
-	name = strings.TrimSpace(name)
+	name, _ := getInput("Create a new bill name: ", reader)
 
 	b := newBill(name)
 	fmt.Println("Created the bill - ", b.name)
