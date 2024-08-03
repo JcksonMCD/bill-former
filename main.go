@@ -7,6 +7,10 @@ import (
 	"strings"
 )
 
+func getInput() (string, error) {
+
+}
+
 func createBill() bill {
 	reader := bufio.NewReader(os.Stdin)
 
