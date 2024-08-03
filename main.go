@@ -45,7 +45,7 @@ func promptOptions(b bill) {
 
 		fmt.Println("Added item :", name, price)
 		promptOptions(b)
-	case "s":
+	case "t":
 		tip, _ := getInput("Tip amount (£): ", reader)
 
 		t, err := strconv.ParseFloat(tip, 64)
@@ -57,8 +57,9 @@ func promptOptions(b bill) {
 
 		fmt.Println("Tip added: ", tip)
 		promptOptions(b)
-	case "t":
-		fmt.Print("You chose a")
+	case "s":
+		b.saveBill()
+		fmt.Print("You have saved bill: ", b.name)
 	default:
 		fmt.Print("You did not choose a valid option...")
 		promptOptions(b)
@@ -68,5 +69,6 @@ func promptOptions(b bill) {
 
 func main() {
 
-	fmt.Println("Hello")
+	b := createBill()
+	promptOptions(b)
 }
