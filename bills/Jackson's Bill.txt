@@ -1,0 +1,7 @@
+Bill Breakdown 
+Pie:                      ...£4.99 
+Pizza:                    ...£8.99 
+Coke:                     ...£2.99 
+Fanta:                    ...£2.99 
+Ice cream:                ...£2.99 
+Tip:                      ...£5.00Total:                    ...£27.95
