@@ -25,6 +25,10 @@ func createBill() bill {
 	return b
 }
 
+func promptOptions(b bill) {
+
+}
+
 func main() {
 
 	fmt.Println("Hello")
